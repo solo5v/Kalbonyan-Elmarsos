@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-hero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      /*
+        SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+        FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98     
+      */
+        * {
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: 'Ubuntu', sans-serif;
+          background-color: antiquewhite;
+          height: 200vh;
+          
+        }
+
+
+        /*YOUR MODIFITION  */
+        header {
+          height: 100vh;
+          position: relative;
+          background: 
+                  linear-gradient(rgba(0, 0, 0, 0.5) ,
+                                  rgba(0, 0, 0, 0.5)),
+                  url(hero.jpg);
+          background-size: cover;
+          color: #eee;   
+
+        }    
+        /* FINSHED NEED ONLY BACKGROUND*/
+
+        nav {
+          font-size: 24px;
+          font-weight: 700;
+          padding-top: 28px;
+          display: flex;
+          justify-content: space-between;
+        }
+        /* FINSHED ONLY NEED COLOR AND MARGIN*/
+
+        .container {
+                  width: 1000px;
+                  margin: 0px auto;
+        }
+        /* DONE */
+
+        .header-content  {    
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          
+          display: grid;
+          grid-template-columns: 430px 1fr;
+          /* grid-template-rows: ; */
+          row-gap: 20px;
+          /*  */       
+        }
+
+        .header-content::after {
+  
+          grid-column: 2;
+          grid-row: 1 / span 3;
+          
+        }
+        .header-content h1 {
+          font-size: 40px;
+        }
+        .header-content p {
+          grid-row: 2;
+          width: 480px;       
+          font-size: 20px;
+          line-height: 1.4;
+          letter-spacing: 0.4px;
+
+        }
+
+        .btn{
+          grid-row: 3;         
+          color: #eee;
+          background-color: #e67e22;
+          width: 42%;    
+          text-decoration: none;
+          text-align: center;
+          font-weight: 500;
+          text-transform: capitalize;
+          padding: 16px 10px;
+          border-radius: 8px;
+          box-shadow: 0 20px 50px  rgba(0, 0, 0, 0.5) ;
+          transition: .3s;
+          display: flex;
+          align-items: center;
+          gap: 7px;
+        }
+
+        .btn:hover {
+          transform: scale(1.1);
+          transition: .3s;
+        }
+
+        .btn-icon {
+          width: 24px;
+          height: 24px;
+        }
+
+
+        .section-content h2 {
+          margin-top: 48px;
+        }
+
+        .section-content p {
+          margin-top: 28px;
+          width: 75%;
+          line-height: 1.6;
+          letter-spacing: 0.6px;
+        }
+
+
+
+
+
+        </style>
+</head>
+<body>
+  
+  <header>
+    <nav class="container">
+      <div>LOGO</div>
+      <div>NAVIGATION</div>
+    </nav>
+
+    <div class="header-content container">
+      <h1>A healthy meal delivered to your door,
+          every single day.
+      </h1>
+      <p>
+        The samrt 356-days-per-year food subscrition that will make you
+        eat healthy again.Tailored to your personal tastes and nutritional
+        needs .
+      </p>
+      <a href="#" class="btn">start eating well
+        <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg>
+      </a>
+    </div>  
+  </header>
+  
+
+  <section class="container section-content">
+    <h2>some random heading</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Odio tempora ea error rem itaque laudantium voluptatem
+      blanditiis voluptas cum! Et voluptas odio similique soluta
+      vero consectetur dolore incidunt temporibus mollitia?
+    </p>
+  </section>
+
+</body>
+</html>

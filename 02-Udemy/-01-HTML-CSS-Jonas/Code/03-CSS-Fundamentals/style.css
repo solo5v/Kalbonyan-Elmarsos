@@ -1,0 +1,284 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+/* PAGE SECTION */
+body {
+    color: #444;
+    font-family: sans-serif;
+    border-top: 7px solid #1098ad;
+    position: relative;
+
+}
+.main-header {
+    background-color: #f7f7f7;
+    /* padding: 20px; */
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    height: 80px;
+}
+
+nav {
+    font-size: 18px;
+    text-align: center;
+}
+.container {
+    width: 800px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+    position: relative;
+}
+
+.post-header {
+    margin-bottom: 30px;
+}
+
+article {
+    margin-bottom: 60px;
+}
+
+
+aside {
+    background-color:#f7f7f7;
+    border-top: 3px solid #1098ad;
+    border-bottom: 3px solid #1098ad;
+    width: 500px;
+    padding: 20px 0px ;
+
+} 
+
+
+/* SAMLLER ELEMENTS */
+h1,
+h2,
+h3,
+h4,
+p ,
+li {
+    font-family: sans-serif;
+    color: #444
+}
+
+h1, 
+h2,
+h3 {
+    color: #1098ad;
+}
+
+
+
+
+h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+
+h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+
+p {
+    font-size: 22px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+ul,
+ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 16px;
+
+}
+
+/* footer p {
+    font-size: 15px;
+} */
+
+
+
+/* article header p {
+    font-style: italic;
+} */
+
+#author {
+    font-style: italic;
+    font-size: 18px;
+}
+
+#copyright {
+    font-size: 16px;
+}
+
+.related-author {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.related-post {
+    list-style: none;
+}
+
+
+
+li:first-child {
+    color: red;
+}
+
+li:last-child {
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+
+
+li:nth-child(2) {
+    font-weight: bold;
+}
+
+a:link {
+    color: #1098ad;
+    text-decoration: none;
+}  
+
+
+a {
+    color: #1098ad;
+}
+
+
+a:visited {
+    color: #1098ad;
+}
+
+a:hover {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline orangered ;
+}
+
+a:active {
+    background-color: black;
+    font-style: italic;
+}
+/* LVHA */
+
+
+.post-img {
+    width: 100%;
+    height: auto;
+    margin: 100px;
+}
+
+
+nav a:link {
+    /* background-color: red; */
+    /* margin: 20px;
+    padding: 20px;
+    display: block;
+     */
+    margin-right: 30px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+nav a:link:last-child {
+    margin-right: 0px;
+}
+
+
+button {
+    font-size: 30px;
+    padding: 17px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+
+}
+
+h1::first-letter {
+    font-style: normal;
+    margin-right: 5px;
+}
+
+
+/* 
+h3 + p::first-line {
+    /* color: red; 
+} 
+*/
+h2 {
+    position: relative;
+}
+
+
+
+h2::after {
+    content: "TOP";
+    background-color: #ffe70e;
+    color: #444;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    top: -15px;
+    right: -25px;
+
+}
+
+
+
+
+
+
+
+/* Resolving conflicts */
+/* #copyright {
+    color: blue;
+    font-size: 30px;
+}
+.copy-right {
+    color: red;
+    font-size: 30px;
+}
+
+.text {
+    color: yellow;
+}
+
+footer p {
+    color: green !important;
+} */
+
+
